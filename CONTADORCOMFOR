@@ -1,0 +1,49 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main(){
+
+  int opc; //armazena a opção de cálculo
+  cout<<"******informe uma opcao!*******\n 1 - Adicao:\n 2 - Subtracao:\n 3 - Multiplicacao:\n 4 - Divisao:\n 5 - Media:"<<endl;
+  cin>>opc;
+  float num1,num2;
+  cin>>num1>>num2;
+
+   if (opc == 1)
+   {
+   	cout<<"Voce escolheu a adicao:\n";
+       cout << "\nA Adicao e:\n" << num1 + num2 << endl;
+   }
+   else if (opc == 2)
+   {
+    cout<<"Voce escolheu a subtracao:\n";
+       cout << "\nA Subtracao e:" << num1 - num2 << endl;
+
+   }
+
+   else if (opc == 3)
+   {
+	cout<<"Voce escolheu a dultiplicacao:\n";
+       cout << "\nA Multiplicacao e:" << num1 * num2 << endl;
+   }
+   else if (opc == 4)
+   {
+	cout<<"Voce escolheu a divisao:\n";
+       cout<<"\nA div e:"<< num1 / num2<<endl;
+   }
+   else if (opc == 5)
+   {
+   	cout<<"Voce escolheu a Media:\n";
+   	   cout<<"\nA Media e:"<<(num1 + num2) / 2<<endl;
+   }
+
+    else
+   {
+        cout<<"Opcao invalida!\n";
+        cout<<"Pressione enter!"<<endl;
+   }
+    getch();
+
+}
